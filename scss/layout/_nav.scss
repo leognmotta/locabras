@@ -1,0 +1,112 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.99);
+  //box-shadow: 1px 2px 20px lightgray;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-branding {
+  @include mq("med") {
+    width: 78%;
+    overflow: hidden;
+  }
+  .logo {
+    embed {
+      width: px-to-em(220px);
+      height: auto;
+      @include mq("med") {
+        width: px-to-em(160px);
+      }
+    }
+    margin: 20px;
+  }
+}
+
+.menu-nav {
+  display: flex;
+
+  @include mq("med") {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-item {
+    list-style: none;
+    padding: 8px 26px;
+    border-right: solid 1.3px $primary-color;
+
+    @include mq("med") {
+      text-align: center;
+      padding: 20px;
+      font-size: px-to-em(38px);
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    &:hover a {
+      color: darken($primary-color, 10%);
+      opacity: 0.8;
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  position: fixed;
+  z-index: 100;
+  right: 25px;
+  top: 35px;
+  cursor: pointer;
+  display: none;
+  @include mq("med") {
+    display: block;
+    margin-left: 23px;
+  }
+
+  .btn-line {
+    margin-left: 100%;
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #000;
+  }
+
+  // Rotate Into X Menu Lines
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
