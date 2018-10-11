@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary;
+  color: $primary-font;
+  font-size: $font-size;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  margin: 1em;
+  @include mq('sm') {
+    font-size: $font-size-mobile;
+  }
+}
+
+h1 {
+  font-family: $secondary;
+  font-size: px-to-em(82px);
+  line-height: 0.9;
+  display: flex;
+  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+  
+  span {
+    display: inline-block;
+    text-align: center;
+    &:first-child {
+      text-align: right;
+      color: $primary-color;
+    }
+    &:last-child {
+      text-align: left;
+      margin-left: px-to-em(18px);
+    }
+  }
+}
+
+.container {
+  max-width: px-to-em(1200px);
+  margin: 0 auto;
+}

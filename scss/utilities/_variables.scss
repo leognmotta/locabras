@@ -1,0 +1,22 @@
+//color
+$primary-font: #252222;
+$primary-color: #801e14;
+
+//fonts
+$primary: "Open Sans";
+$secondary: "amsipro-ultra";
+$third: "amsiprocond-ultra";
+$font-size: 20px;
+$font-size-mobile: 16px;
+
+//breakpoints
+$breakpoints: (
+  "xs": 392px,
+  "sm": 490px,
+  "meeting": 590px,
+  "med": 826px,
+  "suit-hero": 850px,
+  "lg": 1080px,
+  "xl": 1200px,
+  "xxl": 1285px
+);
