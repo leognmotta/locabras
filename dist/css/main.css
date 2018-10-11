@@ -31,6 +31,10 @@ h1 {
       text-align: left;
       margin-left: 0.9em; }
 
+.container-in {
+  max-width: 48em;
+  margin: 0 auto; }
+
 .container {
   max-width: 60em;
   margin: 0 auto; }
@@ -353,7 +357,7 @@ img {
 .nav-bar {
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.99); }
+  background-color: rgba(255, 255, 255, 0.94); }
 
 .nav-container {
   display: flex;
@@ -452,5 +456,48 @@ img {
   @media (max-width: 590px) {
     #title {
       font-size: 1.6em; } }
+
+#quem-somos {
+  margin-top: 120px;
+  padding: 0 1em;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (max-width: 900px) {
+    #quem-somos {
+      margin-top: 60px; } }
+  #quem-somos main {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 900px) {
+      #quem-somos main {
+        justify-content: center; } }
+    #quem-somos main .img-container {
+      width: 50%;
+      align-self: flex-end; }
+      #quem-somos main .img-container img {
+        width: 100%;
+        height: auto;
+        display: block; }
+      @media (max-width: 900px) {
+        #quem-somos main .img-container {
+          display: none; } }
+    #quem-somos main .text-container {
+      margin: 0 1em 3em 3em;
+      width: 50%;
+      height: auto; }
+      #quem-somos main .text-container h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "amsipro-ultra";
+        font-size: 2.6em;
+        color: #801e14; }
+      #quem-somos main .text-container p {
+        text-align: justify; }
+      @media (max-width: 900px) {
+        #quem-somos main .text-container {
+          margin: 0 auto;
+          width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */

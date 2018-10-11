@@ -1,0 +1,57 @@
+#quem-somos {
+  margin-top: 120px;
+  padding: 0 1em;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mq("med") {
+    margin-top: 60px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("med") {
+      justify-content: center;
+    }
+
+    .img-container {
+      width: 50%;
+      align-self: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      @include mq("med") {
+        display: none;
+      }
+    }
+
+    .text-container {
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $secondary;
+        font-size: px-to-em(52px);
+        color: $primary-color;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      margin: 0 1em 3em 3em;
+      width: 50%;
+      height: auto;
+
+      @include mq("med") {
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+  }
+}
