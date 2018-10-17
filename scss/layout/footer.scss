@@ -1,0 +1,54 @@
+footer {
+  background-color: $primary-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+
+    @include mq("footer") {
+      flex-direction: column;
+    }
+  }
+
+  .logo, .copy, .dev {
+    align-self: center;
+
+    @include mq("footer") {
+      flex-direction: column;
+      padding: 1em;
+    }
+  }
+
+  .dev {
+    @include mq("footer") {
+      order: 1;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: $primary;
+      font-weight: 400;
+      color: #fff;
+      font-size: px-to-em(16px);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .copy {
+    text-align: center;
+    font-family: $primary;
+    font-weight: 400;
+    font-size: px-to-em(16px);
+    color: #fff;
+
+    @include mq("footer") {
+      order: 2;
+      margin-top: 34px;
+    }
+  }
+}
