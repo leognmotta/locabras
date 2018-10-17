@@ -33,9 +33,9 @@
   display: flex;
 
   @include mq("med") {
+    padding-top: 120px;
     display: none;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);

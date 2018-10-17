@@ -33,7 +33,6 @@
     @include mq("xl") {
       font-size: px-to-em(40px);
     }
-    
   }
 
   h3 {
@@ -60,7 +59,8 @@
   justify-content: flex-end;
   padding-left: 7em;
 
-  p, h3 {
+  p,
+  h3 {
     text-align: right;
   }
 
@@ -80,17 +80,20 @@
     margin: 0.5em;
   }
 
-  img, embed, p {
+  img,
+  embed,
+  p {
     align-self: center;
   }
 
-  img, embed {
+  img,
+  embed {
     @include mq("lg") {
       width: 120px;
       height: auto;
     }
 
-    @include mq('med') {
+    @include mq("med") {
       width: 80px;
       height: auto;
     }

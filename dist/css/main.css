@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.4; }
-  @media (max-width: 499px) {
+  @media (max-width: 590px) {
     body {
       font-size: 16px; } }
 
@@ -383,9 +383,9 @@ img {
   display: flex; }
   @media (max-width: 900px) {
     .menu-nav {
+      padding-top: 120px;
       display: none;
       flex-direction: column;
-      justify-content: center;
       width: 100vw;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.2); } }
@@ -548,7 +548,8 @@ img {
 .right {
   justify-content: flex-end;
   padding-left: 7em; }
-  .right p, .right h3 {
+  .right p,
+  .right h3 {
     text-align: right; }
   @media (max-width: 1080px) {
     .right {
@@ -564,19 +565,23 @@ img {
     .icon-container,
     .description-container {
       margin: 0.5em; } }
-  .icon-container img, .icon-container embed, .icon-container p,
+  .icon-container img,
+  .icon-container embed,
+  .icon-container p,
   .description-container img,
   .description-container embed,
   .description-container p {
     align-self: center; }
   @media (max-width: 1080px) {
-    .icon-container img, .icon-container embed,
+    .icon-container img,
+    .icon-container embed,
     .description-container img,
     .description-container embed {
       width: 120px;
       height: auto; } }
   @media (max-width: 900px) {
-    .icon-container img, .icon-container embed,
+    .icon-container img,
+    .icon-container embed,
     .description-container img,
     .description-container embed {
       width: 80px;
@@ -594,5 +599,54 @@ img {
     border: none;
     padding: 0;
     margin-right: 0; }
+
+#contact {
+  background: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  #contact .container h2 {
+    font-family: "amsipro-ultra";
+    color: #801e14;
+    font-size: 3.1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 15px; }
+  #contact .container .sandero {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    transform: translateY(-60px) translateX(100px); }
+    @media (max-width: 900px) {
+      #contact .container .sandero {
+        transform: translateY(-20px) translateX(60px); } }
+    @media (max-width: 590px) {
+      #contact .container .sandero {
+        transform: translateY(0) translateX(0); } }
+
+@media (max-width: 499px) {
+  .contact-info span {
+    display: block; } }
+
+#mr {
+  margin-left: 96px;
+  margin-top: 0; }
+
+.contacts {
+  display: flex;
+  margin: 1em 0;
+  padding: .3em; }
+  .contacts h3, .contacts p {
+    margin: 5px 0;
+    font-family: "Open Sans";
+    font-weight: 700; }
+  .contacts .contact-icons {
+    display: flex;
+    justify-content: center; }
+    .contacts .contact-icons embed {
+      align-self: center;
+      margin: 1em;
+      width: 52px;
+      height: auto; }
 
 /*# sourceMappingURL=main.css.map */
