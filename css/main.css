@@ -455,6 +455,9 @@ img {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
   }
+  .hide {
+    display: none;
+  }
 }
 .menu-nav .nav-item {
   list-style: none;
@@ -857,8 +860,4 @@ footer .copy {
 
 .show {
   display: block;
-}
-
-.hide {
-  display: none;
 }
