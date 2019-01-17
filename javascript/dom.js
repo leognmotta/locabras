@@ -35,15 +35,3 @@ for (let i = 0; i < navItem.length; i++) {
     }
   });
 }
-
-// navItem.forEach(function(item) {
-//   item.addEventListener('click', function() {
-//     if (showMenu) {
-//       menuBtn.classList.remove('close');
-//       menu.classList.remove('show');
-//       menu.classList.add('hide');
-//       // set Menu state
-//       showMenu = false;
-//     }
-//   });
-// });
