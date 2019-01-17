@@ -24,8 +24,8 @@ menuBtn.addEventListener('click', function() {
   }
 });
 
-navItem.forEach(function(item) {
-  item.addEventListener('click', function() {
+for (let i = 0; i < navItem.length; i++) {
+  navItem[i].addEventListener('click', function() {
     if (showMenu) {
       menuBtn.classList.remove('close');
       menu.classList.remove('show');
@@ -34,4 +34,16 @@ navItem.forEach(function(item) {
       showMenu = false;
     }
   });
-});
+}
+
+// navItem.forEach(function(item) {
+//   item.addEventListener('click', function() {
+//     if (showMenu) {
+//       menuBtn.classList.remove('close');
+//       menu.classList.remove('show');
+//       menu.classList.add('hide');
+//       // set Menu state
+//       showMenu = false;
+//     }
+//   });
+// });
